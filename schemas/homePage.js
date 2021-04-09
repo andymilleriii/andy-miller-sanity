@@ -18,6 +18,9 @@ export default {
       name: "mainImage",
       title: "Main Image",
       type: "image",
+      options: {
+        hotspot: true,
+      },
       validation: (Rule) => Rule.required(),
     },
     {
@@ -42,6 +45,9 @@ export default {
       name: "aboutImage",
       title: "About Image",
       type: "image",
+      options: {
+        hotspot: true,
+      },
       validation: (Rule) => Rule.required(),
     },
   ],
