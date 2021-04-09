@@ -5,9 +5,10 @@ import {
   AiOutlineUser,
   AiOutlineRead,
   AiOutlineYoutube,
+  AiOutlineAudio,
 } from "react-icons/ai"
 
-const hiddenDocTypes = (listItem) => !["homePage", "post", "about", "bookPage", "videoPage"].includes(listItem.getId())
+const hiddenDocTypes = (listItem) => !["homePage", "post", "about", "bookPage", "videoPage", "podcast"].includes(listItem.getId())
 
 export default () =>
   S.list()
@@ -55,6 +56,15 @@ export default () =>
             .id("video")
             .schemaType("videoPage")
             .documentId("singleton-video")
+        ),
+      S.listItem()
+        .title("Podcast Page")
+        .icon(AiOutlineAudio)
+        .child(
+          S.editor()
+            .id("podcast")
+            .schemaType("podcast")
+            .documentId("singleton-podcast")
         ),
 
       S.divider(),

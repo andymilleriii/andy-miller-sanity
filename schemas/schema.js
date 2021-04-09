@@ -14,6 +14,8 @@ import bookPage from "./bookPage";
 import book from "./book";
 import videoLink from "./videoLink";
 import videoPage from "./videoPage";
+import link from "./link";
+import podcast from "./podcast";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -30,10 +32,12 @@ export default createSchema({
     homePage,
     bookPage,
     videoPage,
+    podcast,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,
     book,
-    videoLink
+    videoLink,
+    link
   ]),
 })
