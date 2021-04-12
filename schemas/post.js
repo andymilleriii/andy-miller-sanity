@@ -52,9 +52,9 @@ export default {
     {
       name: 'previewText',
       title: 'Preview Text',
-      description: 'Snippet of the post that will appear on links to the article.',
+      description: 'Preview of post that appears on other pages of the site and when shared. If left blank, an excerpt will be automatically generated.',
       type: 'text',
-      validation: Rule => Rule.required().max(180)
+      validation: Rule => Rule.max(200)
     },
   ],
 
