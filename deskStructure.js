@@ -8,7 +8,7 @@ import {
   AiOutlineAudio,
 } from "react-icons/ai"
 
-const hiddenDocTypes = (listItem) => !["homePage", "post", "about", "bookPage", "videoPage", "podcast"].includes(listItem.getId())
+const hiddenDocTypes = (listItem) => !["homePage", "post", "about", "bookPage", "videoPage", "podcast", "category"].includes(listItem.getId())
 
 export default () =>
   S.list()
@@ -22,7 +22,7 @@ export default () =>
       S.divider(),
 
       S.listItem()
-        .title("Home Page")
+        .title("Home")
         .icon(AiOutlineHome)
         .child(
           S.editor()
@@ -31,7 +31,7 @@ export default () =>
             .documentId("singleton-home")
         ),
       S.listItem()
-        .title("About Page")
+        .title("About")
         .icon(AiOutlineUser)
         .child(
           S.editor()
@@ -40,7 +40,7 @@ export default () =>
             .documentId("singleton-about")
         ),
       S.listItem()
-        .title("Book Page")
+        .title("Books")
         .icon(AiOutlineRead)
         .child(
           S.editor()
@@ -49,7 +49,7 @@ export default () =>
             .documentId("singleton-book")
         ),
       S.listItem()
-        .title("Video Page")
+        .title("Videos")
         .icon(AiOutlineYoutube)
         .child(
           S.editor()
@@ -58,7 +58,7 @@ export default () =>
             .documentId("singleton-video")
         ),
       S.listItem()
-        .title("Podcast Page")
+        .title("Podcast")
         .icon(AiOutlineAudio)
         .child(
           S.editor()
