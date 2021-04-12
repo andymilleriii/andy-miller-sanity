@@ -16,6 +16,7 @@ import videoLink from "./videoLink";
 import videoPage from "./videoPage";
 import link from "./link";
 import podcast from "./podcast";
+import youtube from "./youtube";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -38,6 +39,7 @@ export default createSchema({
     blockContent,
     book,
     videoLink,
-    link
+    link,
+    youtube
   ]),
 })
