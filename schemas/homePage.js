@@ -1,4 +1,4 @@
-import {AiOutlineHome} from 'react-icons/ai'
+import { AiOutlineHome } from "react-icons/ai";
 
 export default {
   name: "homePage",
@@ -33,7 +33,7 @@ export default {
       name: "aboutSubHeader",
       title: "Main Subheading",
       type: "string",
-      validation: (Rule) => Rule.required().max(55),
+      validation: (Rule) => Rule.required().max(120),
     },
     {
       name: "aboutContent",
@@ -51,4 +51,4 @@ export default {
       validation: (Rule) => Rule.required(),
     },
   ],
-}
+};

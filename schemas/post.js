@@ -34,13 +34,6 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
-      name: "categories",
-      title: "Categories",
-      hidden: "true",
-      type: "array",
-      of: [{ type: "reference", to: { type: "category" } }],
-    },
-    {
       name: "publishedAt",
       title: "Published at",
       type: "datetime",
@@ -59,6 +52,15 @@ export default {
       type: "text",
       validation: (Rule) => Rule.max(200),
     },
+  ],
+  orderings: [
+    {
+      title: "Newest First",
+      name: "newestFirst",
+      by: [
+        {field: 'publishedAt', direction: "desc"}
+      ]
+    }
   ],
 
   preview: {

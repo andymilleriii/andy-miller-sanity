@@ -4,7 +4,7 @@
     "name": "Andy Miller"
   },
   "api": {
-    "projectId": "f2boyawd",
+    "projectId": "o68n75np",
     "dataset": "production"
   },
   "plugins": [
@@ -16,9 +16,7 @@
   ],
   "env": {
     "development": {
-      "plugins": [
-        "@sanity/vision"
-      ]
+      "plugins": ["@sanity/vision"]
     }
   },
   "parts": [
